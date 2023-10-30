@@ -15,6 +15,8 @@ const ExamenCard = ({
   const router = useRouter();
   function goExam(e) {
     if (hover) {
+      const cardData = { area, tema, title, description, puntaje, url };
+      localStorage.setItem("cardData", JSON.stringify(cardData));
       router.push(`/examen/${url}`);
     }
   }

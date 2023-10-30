@@ -8,7 +8,7 @@ export default [
     url: "ecuaciones-basicas",
   },
   {
-    area: "Programacion Lenguaje C",
+    area: "Matemática Básica",
     tema: "Funciones",
     title: "Examen Básico de Funciones",
     description: "Este ha sido un gran examen",
