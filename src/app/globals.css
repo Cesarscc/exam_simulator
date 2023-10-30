@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: black;
+}
+
+.grow-underline {
+  position: relative;
+  transition: all 0.3s ease; /* Ajusta la duración a tu gusto */
+}
+
+.grow-underline::before {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  width: 0%;
+  height: 2px; /* Ajusta el grosor a tu gusto */
+  background-color: currentColor; /* Color del underline igual al del texto */
+  transition: all 0.3s ease; /* Ajusta la duración a tu gusto */
+}
+
+.grow-underline:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+.perspective {
+  perspective: 9500px;
+  /*Esencial para 3D Define cuán lejos está el observador
+  respecto al objeto que se transforma en el espacio tridimensional.
+  Este valor determina cuánto se percibirá la profundidad 3D. A menor valor,
+  mayor será la percepción de profundidad, y a mayor valor,
+  más "plano" o menos intenso será el efecto 3D.*/
+}
+
+.carousel-3d {
+  transform-style: preserve-3d;
+  /*transform-style: preserve-3d;: Esta propiedad determina si los elementos hijos
+  del elemento al que se aplica deben ubicarse en el espacio 3D o en el plano del elemento.
+  preserve-3d: Esto significa que los elementos hijos del elemento .carousel-3d conservarán
+  su posición en el espacio 3D. Sin esta propiedad, los hijos serían aplanados y todas las
+  transformaciones 3D de los hijos se interpretarían como si estuvieran en un solo plano.*/
+  transition: transform 1.5s;
+}
+
+.carousel-item {
+  backface-visibility: hidden;
+}
+
+.focused {
+  opacity: 1;
+  /* Ítem completamente visible */
+  filter: none;
+  /* Sin desenfoque */
+}
+
+.blurred {
+  opacity: 0.5; /*Ítemmediotransparente*/
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+  /*Ligeramentedesenfocado*/
+}
+
+.effect_vanish {
+  animation: fadeIn 1s;
+  opacity: 1;
+  -webkit-animation: fadeIn 1s;
+}
+
+.dashboard {
+  scrollbar-width: thin;
+  scrollbar-color: #c4c4c4 #100d0c;
+}
+
+.dashboard::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 9999px;
+  background-color: #c4c4c4;
+}
+
+.dashboard::-webkit-scrollbar-thumb {
+  background-color: #c4c4c4;
+  border-radius: 9999px;
+}
+
+.dashboard::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #100d0c;
+}
+
+.loader {
+  width: 580px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid;
+  border-color: #000 #ffffff;
+  animation: l1 1s infinite;
+  -webkit-animation: l1 1s infinite;
+}
+@keyframes l1 {
+  to {
+    transform: rotate(0.5turn);
+  }
+}

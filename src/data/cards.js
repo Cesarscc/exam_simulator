@@ -1,0 +1,42 @@
+export default [
+  {
+    area: "Matemática",
+    tema: "Ecuaciones",
+    title: "Examen Básico de Ecuaciones",
+    description: "Este ha sido un buen examen",
+    puntaje: 4.5,
+    url: "ecuaciones-basicas",
+  },
+  {
+    area: "Programacion Lenguaje C",
+    tema: "Funciones",
+    title: "Examen Básico de Funciones",
+    description: "Este ha sido un gran examen",
+    puntaje: 4.7,
+    url: "funciones-basicas",
+  },
+  {
+    area: "Fisica",
+    tema: "M.R.U.",
+    title: "Examen Básico de Física",
+    description: "Este ha sido un gran reto",
+    puntaje: 4.7,
+    url: "mru-basico",
+  },
+  {
+    area: "Quimica",
+    tema: "La Materia",
+    title: "Examen Básico de Química",
+    description: "Este ha sido un gran reto",
+    puntaje: 4.2,
+    url: "la-materia",
+  },
+  {
+    area: "Trigonometría",
+    tema: "Longitud de Arco y Sector Circular",
+    title: "Examen Básico de Trigonometría",
+    description: "Este ha sido un gran desafío",
+    puntaje: 3.5,
+    url: "longitud-arco-sector-circular",
+  },
+];
