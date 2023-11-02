@@ -36,13 +36,13 @@ const Page = () => {
       </p>
       {(resultadosData.puntaje / resultadosData.lengthQuestions) * 100 > 50 ? (
         <>
-          <p className="text-white font-sans text-center">
-            Felicidades aprobaste este examen
+          <p className="text-white font-sans text-center text-[30px] font-semibold">
+            Felicidades aprobaste este examen 🙌🤩🥳
           </p>
         </>
       ) : (
         <>
-          <p className="text-white font-sans text-center text-[30px]">
+          <p className="text-white font-sans text-center text-[30px] font-semibold">
             No Aprobaste este examen 😓
             <br />
             Mejor suerte en el siguiente intento 😎

@@ -14,7 +14,7 @@ const Navbar = () => {
       </div>
       <div className="flex justify-around basis-2/3">
         <Link
-          href={"#"}
+          href={"/documentos"}
           className="hover:text-gray-400 hover:transition-all cursor-pointer grow-underline"
         >
           Documentos

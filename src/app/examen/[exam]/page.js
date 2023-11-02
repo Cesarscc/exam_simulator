@@ -3,9 +3,8 @@ import React, { useState, useEffect } from "react";
 import Form from "@/components/Form";
 import preguntas from "@/data/preguntas";
 
-const page = () => {
+const Page = () => {
   const [cardData, setCardData] = useState({});
-  //TODO: Encriptar las respuestas correctas
   useEffect(() => {
     const storedData = localStorage.getItem("cardData");
     if (storedData) {
@@ -29,4 +28,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
