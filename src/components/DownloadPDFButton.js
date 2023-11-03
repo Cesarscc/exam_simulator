@@ -20,19 +20,20 @@ const DownloadPDFButton = ({ urlDoc, name }) => {
 
   return (
     <div className="flex justify-center pt-5">
-      <Link
-        href={urlDoc}
-        download
-        ref={(link) => link && loading && link.click()}
-        target="_blank"
-      />
       <div onClick={handleDownloadClick}>
         {loading ? (
           <div className="loader_pdf" /> // Puedes usar tu propia animación aquí
         ) : (
-          <button className="bg-[#f0f0f0] font-mono font-semibold text-[16px] border-4 rounded-3xl w-[150px] h-14 shadow-2xl hover:bg-black hover:text-white hover:animate-pulse-slow hover:transition-all hover:delay-150">
-            Descargar PDF
-          </button>
+          <Link
+            href={urlDoc}
+            download
+            ref={(link) => link && loading && link.click()}
+            target="_blank"
+          >
+            <button className="bg-[#f0f0f0] font-mono font-semibold text-[16px] border-4 rounded-3xl w-[150px] h-14 shadow-2xl hover:bg-black hover:text-white hover:animate-pulse-slow hover:transition-all hover:delay-150">
+              Descargar PDF
+            </button>
+          </Link>
         )}
       </div>
     </div>
