@@ -1,5 +1,17 @@
 export default [
   {
+    name: "Diego Armando",
+    tema: "La Materia",
+    comentario: "Fue interesante 10/10",
+    puntaje: 4.4,
+  },
+  {
+    name: "Cesar Colorado",
+    tema: "Funciones",
+    comentario: "Fue Chido",
+    puntaje: 3.9,
+  },
+  {
     name: "Juanito Alcala",
     tema: "Ecuaciones",
     comentario: "Fue Nice",
