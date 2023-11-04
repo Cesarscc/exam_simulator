@@ -28,7 +28,7 @@ const Form = ({ preguntas }) => {
     if (preguntaActual < preguntas.length - 1) {
       setPreguntaActual(preguntaActual + 1);
     } else {
-      const lengthQuestions = preguntas.length;
+      const lengthQuestions = preguntas.length - 1;
       const resultadosData = {
         puntaje,
         lengthQuestions,
