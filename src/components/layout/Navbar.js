@@ -20,7 +20,7 @@ const Navbar = () => {
           Documentos
         </Link>
         <Link
-          href={"#"}
+          href={"/comentarios"}
           className="hover:text-gray-400 hover:transition-all cursor-pointer grow-underline"
         >
           Comentarios

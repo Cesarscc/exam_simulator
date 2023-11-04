@@ -8,7 +8,7 @@ export default [
     url: "ecuaciones-basicas",
   },
   {
-    area: "Matemática Básica",
+    area: "Matemática",
     tema: "Funciones",
     title: "Examen Básico de Funciones",
     description: "Este ha sido un gran examen",
@@ -32,7 +32,7 @@ export default [
     url: "la-materia",
   },
   {
-    area: "Trigonometría",
+    area: "Matemática",
     tema: "Longitud de Arco y Sector Circular",
     title: "Examen Básico de Trigonometría",
     description: "Este ha sido un gran desafío",

@@ -30,7 +30,7 @@ const Page = () => {
         Tema: {cardData.tema}
       </p>
       <p className="text-white text-center text-[30px] font-bold">
-        Obtuviste un total de{" "}
+        Obtuviste un total de {resultadosData.puntaje}{" "}
         {(resultadosData.puntaje / resultadosData.lengthQuestions) * 100}% de
         aciertos
       </p>
